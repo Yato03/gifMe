@@ -1,0 +1,50 @@
+nav{
+    top: 0;
+    background-color: aliceblue;
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    box-shadow: 0px 2px 2px 1px black;
+}
+
+nav .titulo {
+    text-decoration: none;
+    color: black;
+    font-size: 1.9em;
+    font-family: monospace;
+}
+
+nav span {
+    height: 50%;
+    border-style: ridge;
+    border-color: black;
+    box-shadow: 3px 2px 6px 1px black;
+    padding: 0px 3px 0px 3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span:hover{
+    background-color: rgb(247, 247, 247) !important;/*rgb(219, 219, 219) !important*/
+    animation: title 100ms;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+}
+
+span:focus{
+    background-color: rgb(247, 247, 247) !important;/*rgb(219, 219, 219) !important*/
+    animation: title 100ms;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes title {
+    100% {
+        box-shadow: 6px 3px 6px 1px black;
+    }
+
+}
