@@ -1,5 +1,6 @@
 import {useState} from "react"
 import {useLocation} from "wouter"
+import "./Searcher.css"
 
 export const Searcher = () =>{
     
@@ -20,6 +21,7 @@ export const Searcher = () =>{
     return(
         <form onSubmit={handleOnSubmit}>
             <input 
+                className="buscador"
                 type="text" 
                 onChange={handleOnChange} 
                 value={newSearch}
